@@ -1,8 +1,8 @@
 <?php return [
-	'pointScale' => 200,
+	'pointScale' => 100,
 	'categories' => [
 		[
-			'name' => 'Animal',
+			'name' => 'Life Science',
 			'questions' =>  [
 				[
 					'question' => 'How long is an elephant pregnant before it gives birth?',
@@ -52,7 +52,7 @@
 			]
 		],
 		[
-			'name' => 'US History',
+			'name' => 'U.S. History',
 			'questions' =>  [
 				[
 					'question' => 'What city was the first capital of the United States?',
@@ -77,52 +77,52 @@
 			]
 		],
 		[
-			'name' => 'Stormy Weather',
+			'name' => 'Astronomy',
 			'questions' =>  [
 				[
-					'question' => 'xx',
-					'answer'   => 'xx',
+					'question' => 'What is the hottest planet in our solar system?',
+					'answer'   => 'Venus',
 				],
 				[
-					'question' => 'xx',
-					'answer'   => 'xx',
+					'question' => 'What planet rotates the fastest in the solar system?',
+					'answer'   => 'Venus',
 				],
 				[
-					'question' => 'xx',
-					'answer'   => 'xx',
+					'question' => 'What astrononmy figure occurs after a supernova?',
+					'answer'   => 'blackhole',
 				],
 				[
-					'question' => 'xx',
-					'answer'   => 'xx',
+					'question' => 'Which planet has the fasted wind speed recorded in our Solar System?',
+					'answer'   => 'Neptune',
 				],
 				[
-					'question' => 'xx',
-					'answer'   => 'xx',
+					'question' => 'Whats the asternomical unit we use to measure how fast light travels?',
+					'answer'   => 'Lightspeed',
 				],
 			]
 		],
 		[
-			'name' => 'Tornado Safety and Trivia',
+			'name' => 'Computer SCI',
 			'questions' =>  [
 				[
-					'question' => 'xx',
-					'answer'   => 'xx',
+					'question' => 'Who created WWWW and HTML?',
+					'answer'   => 'Tim Berners-Lee ',
 				],
 				[
-					'question' => 'xx',
-					'answer'   => 'xx',
+					'question' => 'Who delievered the first complier in 1904?',
+					'answer'   => 'Grace Hooper',
 				],
 				[
-					'question' => 'xx',
-					'answer'   => 'xx',
+					'question' => 'Which company introduced first consumer computer with user interface?',
+					'answer'   => 'Apple',
 				],
 				[
-					'question' => 'xx',
-					'answer'   => 'xx',
+					'question' => 'Which Computer architect insisted on not distinguish between instruction from data',
+					'answer'   => 'Von Neumann',
 				],
 				[
-					'question' => 'xx',
-					'answer'   => 'xx',
+					'question' => 'How much did the first Computer ENIAC weighed',
+					'answer'   => '27 tons',
 				],
 			]
 		],
