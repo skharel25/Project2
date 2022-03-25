@@ -42,6 +42,50 @@
             $(document).keydown(function(event) {
                 if (event.shiftKey) $('.question .award').addClass('wrong');
             });
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="template.css">
+    <title>Jeoparody</title>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.game .tile').one('click', function() {
+                var points = parseInt($(this).data('points'));
+                var answer = $(this).data('answer');
+                $('.question').show();
+                $('.award, .showanswer').show();
+                $('.question .text').text($(this).data('question'));
+                $('.award').click('click', function() {
+                    var money = $('.' + $(this).data('player') + '-score');
+                    var pointsScored = points;
+                    var isWrong = $(this).hasClass('wrong');
+                    if (isWrong) {
+                        pointsScored *= -1;
+                        $('.award').removeClass('wrong');
+                    }
+                    money.data('score', money.data('score') + pointsScored);
+                    money.text((money.data('score') < 0 ? '-' : '') + '$' + Math.abs(money.data('score')));
+                    if (!isWrong) {
+                        $('.showanswer').click();
+                    }
+                });
+                $('.showanswer').one('click', function() {
+                    $('.award, .showanswer').off('click').hide();
+                    $('.question .text').text(answer)
+                        .one('click', function() {
+                            $('.question').hide();
+                        });
+                });
+                $(this).removeClass('tile').removeClass('dd').text('');
+            });
+            $('.player').blur(function() {
+                $('.' + $(this).data('player') + '-name').text($(this).text());
+            });
+            $(document).keydown(function(event) {
+                if (event.shiftKey) $('.question .award').addClass('wrong');
+            });
             $(document).keyup(function(event) {
                 $('.question .wrong').removeClass('wrong');
             });
@@ -98,5 +142,5 @@
             <td class="p4-score" data-score="0">$0</td>
         </tr>
     </table>
-
+					</body>
 </html>
