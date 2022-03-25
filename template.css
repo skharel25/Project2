@@ -1,11 +1,17 @@
-       table {
+    table {
         background-color: blue;
         color: white;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     body {
         background-color: blue;
         color: white;
+        background-image: url('pole.jpeg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
     }
     
     body {
@@ -30,6 +36,8 @@
         height: 60vh;
         border-spacing: 0;
         border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .game td {
